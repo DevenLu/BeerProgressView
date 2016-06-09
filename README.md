@@ -23,14 +23,14 @@ A cool beer styled progress view with realistic bubbles*.  Cheers!
 To use **BeerProgressView** in your projects, simply add the library as a dependency to your build.
 
 ##### Gradle
-```
+```groovy
 dependencies {
   compile 'uk.co.barbuzz.beerprogressview:0.0.4'
 }
 ```
 
 ##### Maven
-```
+```xml
 <dependency>
   <groupId>uk.co.barbuzz.beerprogressview</groupId>
   <artifactId>beerprogressview</artifactId>
@@ -52,7 +52,7 @@ For more detailed code example to use the library, Please refer to the `/sample`
 
 `BeerProgressView` can be added as a custom view to any layout.
 
-```
+```xml
 <uk.co.barbuzz.beerprogressview.BeerProgressView
         android:id="@+id/beerProgressView"
         android:layout_width="match_parent"
@@ -65,7 +65,7 @@ For more detailed code example to use the library, Please refer to the `/sample`
 ```
 
 You can then either set the xml parameters to configure the view or do it programmatically as follows
-```
+```java
 BeerProgressView beerProgressView = (BeerProgressView) findViewById(R.id.beerProgressView);
 beerProgressView.setBeerColor(ContextCompat.getColor(mActivity, R.color.lager));
 beerProgressView.setBubbleColor(ContextCompat.getColor(mActivity, R.color.lager_bubble));
